@@ -9,7 +9,7 @@ Minimum requirements to start the app is a computer to host a local server and t
 (real or virtual Android smartphones) to communicate with each other. Maximum tested devices are
 three servers on a single computer, two virtual clients and two real android devices simultaneousley. 
 
-## Instructions
+## Installation Instructions
 
 Clone the app to a local folder of your choice and do the following to set up the system:
 
@@ -36,6 +36,7 @@ brokers you desire. Execute the following steps to proceed:
    connections.." (*Return to the other brokers to finish the setup*).
 
 #### Other Brokers
+
 1. Open the `Broker` folder in your code editor.
 2. If not automatically added, add the `LTest.jar` library from the folder `libs` as a dependency to 
    your code.
@@ -54,6 +55,25 @@ You are finished with setting up the system brokers. Proceed to setting up the c
 
 ### Client
 
+1. Open the DSApp folder in your IDE.
+2. If you choose to run it via Android Studio, the dependencies will be loaded automatically. In any other case make sure
+   to add the `LTest.jar` library from the folder `app/libs` as a dependency to your code.
+3. Either run the app on a virtual emulator or run it on a connected Android phone in debugging mode.
+4. The database used by the app is empty on installation and starts saving user data, messages and subscriptions through
+   the UI.
 
+## User Instructions
 
+1. Make sure you didn't skip any of the steps above and the broker(s) is (are) up and running.
+2. Open the app on your android device of choice.
+3. If you are logging in for the first time you will be prompted to enter a username. Tap on `START`.
+4. On the next page you can view all the conversations you are subscribed to. 
+   a. Tap on a conversation to enter and view the content.
+   b. To subscribe to new ones tap on `+`. On the upcoming menu all the topics hosted by the broker will be shown.
+      Pick the ones you prefer and subscribe to them.
+5. Enter the message you wish to send to this topic and tap on `->`. Else tap on &#x2191; to choose a file from your
+   local storage and send it.
+6. On the section above the "Enter Message" prompt you can view the conversation history since the first login.
+   Everytime someone sends a message all the subscribers of a topic who are connected at that time receive it instantly.
+   Else it is saved in the broker history and the user receives it upon entering the room.
 

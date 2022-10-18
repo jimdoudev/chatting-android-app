@@ -75,5 +75,5 @@ You are finished with setting up the system brokers. Proceed to setting up the c
    local storage and send it.
 6. On the section above the "Enter Message" prompt you can view the conversation history since the first login.
    Everytime someone sends a message all the subscribers of a topic who are connected at that time receive it instantly.
-   Else it is saved in the broker history and the user receives it upon entering the room..
+   Else it is saved in the broker history and the user receives it upon entering the room.
 
